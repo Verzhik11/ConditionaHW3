@@ -5,8 +5,14 @@ public class Main {
         //task3();
         //task4();
         //task5();
-        task6();
+        //task6();
         //task7();
+        //task8();
+        //task9();
+        task10();
+        //task11();
+        //task12();
+
     }
 
     public static void task1() {
@@ -108,7 +114,7 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
-        int one = 5;
+        int one = 10;
         int two = 8;
         int three = 3;
         if (one > two && one > three) {
@@ -121,4 +127,88 @@ public class Main {
             System.out.println("Наибольшее число " + three);
         }
     }
+
+    public static void task8() {
+        System.out.println("Условные операторы. Часть 2");
+        System.out.println("Задача 1");
+        int clientOS = 3;
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Версия вашей операционной системы не поддерживается");
+        }
+    }
+    public static void task9() {
+        System.out.println("Задача 2");
+        int clientOS = 1;
+        int clientDeviceYear = 2010;
+        if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+            } else if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+            } else if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Версия вашей операционной системы не поддерживается");
+        }
+    }
+    public static void task10() {
+        System.out.println("Задача 3");
+        int year = 300;
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+    }
+
+    public static void task11() {
+        System.out.println("Задача 4");
+        int deliveryDistance = 105;
+        if (deliveryDistance <= 20) {
+            System.out.println("Для доставки до 20 км потребуются сутки");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Для доставки от 20 км до 60 км потребуются двое суток");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Для доставки от 60 км до 100 км потребуются трое суток");
+        } else if (deliveryDistance > 100) {
+            System.out.println("При расстоянии от 100 км доставка не осуществляется");
+
+        }
+    }
+    public static void task12() {
+        System.out.println("Задача 5");
+        int monthNumber = 20;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Месяц относится к сезону зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Месяц относится к сезону весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Месяц относится к сезону лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Месяц относится к сезону осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+
+        }
+    }
 }
+
+
